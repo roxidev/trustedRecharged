@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awsome cdnjs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ASO Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Trusted Recharce</title>
+  </head>
+  <body>
+    <!--====== nav start ========-->
+    <nav class="bg-gray-100 mb-5 lg:mb-0">
+      <div
+        class="flex flex-col lg:flex-row lg:justify-between lg:items-center container"
+      >
+        <div class="flex justify-between items-center">
+          <span>
+            <img
+              src="../dist/images/logo.jpg"
+              alt=""
+              class="w-28 inline cursor-pointer rounded-md"
+            />
+          </span>
+          <span class="text-2xl cursor-pointer lg:hidden block">
+            <i
+              class="fa-solid fa-bars menu-icon"
+              name="menu"
+              onclick="onToggleMenu()"
+            ></i>
+          </span>
+        </div>
+        <!-- menu list start -->
+        <div class="hidden lg:block toggle-menu" >
+          <ul
+            class="flex flex-col gap-1 text-center lg:flex-row lg:items-center lg:gap-[4vw] font-medium text-secondar tracking-wide text-base xl:text-lg w-full left-0 lg:w-auto lg:opacity-100 opacity- top[-400px] transition-all ease-in duration-500"
+          >
+            <li
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
+            >
+              <a
+                class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100"
+            >
+              <a
+                class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
+                href="#"
+                >Service</a
+              >
+            </li>
+            <li
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
+            >
+              <a
+                class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
+                href="#pricing"
+                >Pricing</a
+              >
+            </li>
+            <li
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
+            >
+              <a
+                class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
+                href="#"
+                >Property</a
+              >
+            </li>
+            <li
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
+            >
+              <a
+                class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
+                href="#"
+                >About</a
+              >
+            </li>
+            <button>
+              <a
+                href="#"
+                class="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary flex items-center justify-center gap-2 px-5 py-2 rounded-full font-medium text-white text-base xl:text-lg duration-500"
+                ><i class="fa-solid fa-arrow-right-to-bracket"></i> Download</a
+              >
+            </button>
+          </ul>
+        </div>
+        <!-- menu list end -->
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!--====== Slider start ======-->
+    <div class="">
+      <div class="carousel lg:h-[500px] w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/slide1.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/slide2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/slide3.jpeg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/slide4.jpeg" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center w-full py-2 gap-2">
+        <a href="#slide1" class="btn btn-xs">1</a>
+        <a href="#slide2" class="btn btn-xs">2</a>
+        <a href="#slide3" class="btn btn-xs">3</a>
+        <a href="#slide4" class="btn btn-xs">4</a>
+      </div>
+    </div>
+    <!-- Slider end -->
+    <!--======= service section start ======-->
+  
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 container mt-10">
+        <!-- card-1 -->
+      <div
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+      >
+        <div class="relative p-10 top-0 w-full">
+          <i
+            class="fa-solid fa-calculator text-5xl text-primary right-10 lg:left-10 absolute rounded-md"
+          ></i>
+          <h3
+            class="text-2xl text-center lg:text-start text-gray-600 group-hover:text-white font-jost font-semibold top-32 mt-16"
+          >
+            ক্লিয়ারকাট হিসাব
+          </h3>
+          <h5
+            class="text-gray-400 group-hover:text-white text-center lg:text-start mt-5"
+          >
+            এক ক্লিকে করে নিন প্রতিদিনের লাভ লসের হিসাব । আপনার কতো টাকা রিচার্জ
+            হয়েছে , কতো টাকার ড্রাইভ নিয়েছেন , কোথায় কতো টাকা খরজ করেছেন সব
+            পাবেন এক ক্লিকে ।
+          </h5>
+          <div
+            class="group-hover:text-white text-center mt-5 text-primary font-semibold"
+          >
+            <a href="#" class="flex items-center justify-center gap-2"
+              >Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary " data-aos="flip-up"
+      >
+        <div class="relative p-10 top-0 w-full">
+          <img
+            src="../dist/images/icons/service-icon-02.png"
+            alt=""
+            class="fa-solid fa-calculator text-5xl group-hover:text-white right-10 lg:left-10 absolute rounded-md"
+          />
+          <h3
+            class="text-2xl text-center lg:text-start text-gray-600 group-hover:text-white font-jost font-semibold top-32 mt-16"
+          >
+            রিচার্জ হিস্ট্রি
+          </h3>
+          <h5
+            class="text-gray-400 group-hover:text-white text-center lg:text-start mt-5"
+          >
+            ৩/৫ সেকেন্ডের মধ্যে রিচার্জ Successful হবে। রিচার্জের ক্ষেত্রে
+            Pending, Waiting এর কোন ঝামেলা নেই। আমাদের রিচার্জ সার্ভিস ২৪ ঘন্টা
+            চালু থাকে।
+          </h5>
+          <div
+            class="group-hover:text-white text-center mt-5 text-primary font-semibold"
+          >
+            <a href="#" class="flex items-center justify-center gap-2"
+              >Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+      >
+        <div class="relative p-10 top-0 w-full">
+          <img
+            src="../dist/images/icons/service-icon-03.png"
+            alt=""
+            class="fa-solid fa-calculator text-5xl group-hover:text-white right-10 lg:left-10 absolute rounded-md"
+          />
+          <h3
+            class="text-2xl text-center lg:text-start text-gray-600 group-hover:text-white font-jost font-semibold top-32 mt-16"
+          >
+            মার্চেন্ট পে
+          </h3>
+          <h5
+            class="text-gray-400 group-hover:text-white text-center lg:text-start mt-5"
+          >
+            বিদ্যুৎ বিল সহ যে কোন ধরনের পেমেন্ট , বিল পে , কেনেকাটা করুন খুব
+            সহজে Merchant আমাদের ব্যাবহার করে , দ্রুত ও নিরাপদ ভাবে ।
+          </h5>
+          <div
+            class="group-hover:text-white text-center mt-5 text-primary font-semibold"
+          >
+            <a href="#" class="flex items-center justify-center gap-2"
+              >Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card-4 -->
+      <div
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+      >
+        <div class="relative p-10 top-0 w-full">
+          <img
+            src="../dist/images/icons/service-icon-04.png"
+            alt=""
+            class="fa-solid fa-calculator text-5xl group-hover:text-white right-10 lg:left-10 absolute rounded-md"
+          />
+          <h3
+            class="text-2xl text-center lg:text-start text-gray-600 group-hover:text-white font-jost font-semibold top-32 mt-16"
+          >
+            রিয়েল টাইম নোটিফিকেশন
+          </h3>
+          <h5
+            class="text-gray-400 group-hover:text-white text-center lg:text-start mt-5"
+          >
+            নতুন নতুন ও আকর্ষণীয় সব অফার জানাতে আমরা ২৪ ঘণ্টাই আপনাদের
+            নোটিফিকেশন দিয়ে থাকি ।
+          </h5>
+          <div
+            class="group-hover:text-white text-center mt-5 text-primary font-semibold"
+          >
+            <a href="#" class="flex items-center justify-center gap-2"
+              >Read More
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service section end -->
+    <!--===== Server-Service Start =====-->
+    <div class="flex flex-col lg:flex-row gap-20 container mt-20" data-aos="fade-up">
+      <div class="text-center w-full" >
+        <h2 class="text-3xl font-semibold font-jost  " >আমার সার্ভার কি ?</h2>
+        <span class="text-7xl font-thin mb-10 text-primary">--</span>
+        <h6 class="text-gray-400 mb-2">
+          আমার সার্ভার এর মাধ্যমে সকল সিমে রিচার্জ করতে পারবেন এবং সকল সিমে
+          সাশ্রয়ী মূল্যে এমবি, মিনিটের অফার দিতে পারবেন।
+        </h6>
+        <ul class="list-inside text-gray-400 space-y-1">
+          <li>
+            👉একই অ্যাকাউন্ট থেকে সকল অপারেটর এর সিমে রিচার্জ করতে পারবেন।
+          </li>
+          <li>
+            👉 ৩/৫ সেকেন্ডের মধ্যে রিচার্জ Successful হবে। রিচার্জের ক্ষেত্রে
+            Pending, Waiting এর কোন ঝামেলা নেই। আমাদের রিচার্জ সার্ভিস ২৪ ঘন্টা
+            চালু থাকে।
+          </li>
+          <li>
+            👉 ড্রাইভ, রিচার্জের ব্যালেন্স নিজের একাউন্টে নিজেই অ্যাড করতে
+            পারবেন। নিজের বিকাশ, রকেট, নগদ, উপায়, সেলফিন একাউন্ট থেকে সম্পূর্ণ
+            অটোমেটিক ভাবে।
+          </li>
+          <li>
+            👉 প্রত্যেকটা অফারের ক্ষেত্রে ৩০ টাকা থেকে শুরু করে সর্বোচ্চ ৩০০/৪০০
+            টাকা পর্যন্ত কমিশন পাবেন।
+          </li>
+          <li>
+            👉পাশাপাশি ফ্লেক্সিলোডের কমিশনও প্রতি হাজারে % হিসেবে আপনার একাউন্টে
+            অটোমেটিক যোগ হয়ে যাবে।
+          </li>
+        </ul>
+      </div>
+      <div class="text-center w-full">
+        <h2 class="text-3xl font-semibold font-jost">
+          কেনো আমাদের অ্যাপ ব্যাবহার করবেন ?
+        </h2>
+        <span class="text-7xl font-thin mb-10 text-primary">--</span>
+        <ul class="list-inside text-gray-400 space-y-1">
+          <li class="leading-relaxed">
+            আমাদের কোম্পানি সরকারি ট্রেড লাইসেন্স প্রাপ্ত এবং আমার সার্ভার
+            ভেরিফাই এসোসিয়েশন (ASVA) কর্তৃক ভেরিফাইড। এখানে কোনো ধরনের
+            ধোঁকাবাজির বিন্দুমাত্র সম্ভাবণা নেই। 👉তারপরও গ্যারান্টি দিচ্ছি
+            আমাদের পুর্ণ ঠিকানা (লোকেশন) দেব। যদি আপনার (১০) টাকাও সমস্যা হয় আর
+            আমরা ফিরিয়ে না দেই, তাহলে আমাদের ঠিকানায় এসে আপনার যাওয়া আসার খরচ
+            সহ আপনার টাকা ফেরত নিয়ে যাবেন।
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Server-Service end -->
+    <!--===== support section start =====-->
+    <div
+      class="container text-center text-3xl font-semibold hover:tracking-widest duration-300 mt-10 py-10 group" data-aos="flip-up"
+    >
+      <span class="text-secondary group-hover:text-primary">আমাদের</span>
+      <span class="text-primary group-hover:text-secondary">বৈশিষ্ট্য</span>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 container">
+      <!-- 1 -->
+      <div class="group w-full bg-gray-50 rounded-3xl p-5 shadow">
+        <h3
+          class="text-2xl text-center text-gray-600 group-hover:text-primary transition font-jost font-semibold"
+        >
+          রক্ষণাবেক্ষণ সমস্যা
+        </h3>
+        <h5 class="text-gray-400 text-center">
+          আমাদের সাপোর্ট টিম সব সময় নিয়োজিত।
+        </h5>
+      </div>
+      <!-- 2 -->
+      <div class="group w-full bg-gray-50 rounded-3xl p-5 shadow">
+        <h3
+          class="text-2xl text-center text-gray-600 group-hover:text-primary transition font-jost font-semibold"
+        >
+          24/7 Support & Help
+        </h3>
+        <h5 class="text-gray-400 text-center">
+          আমাদের কাস্টমার কেয়ারের সুবিধা রয়েছে।
+        </h5>
+      </div>
+      <!-- 3 -->
+      <div class="group w-full bg-gray-50 rounded-3xl p-5 shadow">
+        <h3
+          class="text-2xl text-center text-gray-600 group-hover:text-primary transition font-jost font-semibold"
+        >
+          সমস্যা সমাধান
+        </h3>
+        <h5 class="text-gray-400 text-center">
+          লাইভ সাপোর্টে সকল সমস্যা সমাধান করা হয়
+        </h5>
+      </div>
+      <!-- 4 -->
+      <div class="group w-full bg-gray-50 rounded-3xl p-5 shadow">
+        <h3
+          class="text-2xl text-center text-gray-600 group-hover:text-primary transition font-jost font-semibold"
+        >
+          Developer Team
+        </h3>
+        <h5 class="text-gray-400 text-center">
+          আমার সার্ভারের পুরো টিম সব সময় এইটা ডেভেলপ করে থাকে ।
+        </h5>
+      </div>
+    </div>
+    <div class="container text-center">
+      <h5 class="text-gray-400 mx-auto lg:w-1/2 mt-10 mb-8">
+        আপনি চিন্তা মুক্ত ভাবে আমাদের থেকে একাউন্ট নিতে পারেন, ইনকামের পথ আমরা
+        আপনাকে দেখিয়ে দেব, ইনশাআল্লাহ!! কাজ শিখিয়ে দেওয়া আমাদের দায়িত্ব।
+      </h5>
+      <a
+        href="#"
+        class="bg-gradient-to-r from-primary to-secondary text-white px-5 py-2 font-jost rounded-full"
+        >এখনই অ্যাকাউন্ট খুলুন</a
+      >
+      <p class="text-sm mt-5">*অগ্রিম কোন টাকার প্রয়োজন নেই</p>
+    </div>
+    <!-- support section end -->
+    <!-- ====Feature Section start==== -->
+    <div class="mt-28 container">
+      <h2 class="text-3xl text-primary font-semibold text-center">
+        অসাধারণ ফিচার
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <!-- feature-1 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-solid fa-money-bill text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">সহজ অ্যাড ব্যালেন্স</h5>
+          <h5 class="text-lg mt-5">
+            নগদ ও বিকাশে সেন্ড মানি করার সময় রেফারেন্সে আপনার ইউজার নাম্বারটা
+            দিয়ে দিলে ৩ সেকেন্ডের মধ্যে অটো টাকা অ্যাড হয়ে যাবে ।
+          </h5>
+        </div>
+        <!-- feature-2 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-regular fa-image text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">ছবি সহ নোটিফিকেশান</h5>
+          <h5 class="text-lg mt-5">
+            আপনি আপনার ইচ্ছা অনুযায়ী ছবি দিয়ে সকল গ্রাহকের কাছে পুশ নোটিফিকেশান
+            অথবা টেক্সট নোটিফিকেশান পাঠাতে পারবেন ।
+          </h5>
+        </div>
+        <!-- feature-3 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-regular fa-pen-to-square text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">কাস্টম ইউজার লেভেল</h5>
+          <h5 class="text-lg mt-5">
+            আপনি আপনার ইচ্ছা মত লেভেল নিজে বানিয়ে নিতে পারবেন এবং যে কোনও সময়
+            এইটা পরিবর্তন করতে পারবেন।
+          </h5>
+        </div>
+        <!-- feature-4 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-solid fa-power-off text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">গ্লোবাল কিল সুইচ</h5>
+          <h5 class="text-lg mt-5">
+            এক ক্লিকেই আপনি সকল রিচার্জ , ড্রাইভ , অফার , ব্যালেন্স ট্রান্সফার
+            চালু ও বন্ধ করতে পারবেন ।।
+          </h5>
+        </div>
+        <!-- feature-5 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-solid fa-gauge-high text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">ড্যাশবোর্ড</h5>
+          <h5 class="text-lg mt-5">
+            এক ক্লিকেই ড্যাশবোর্ড থেকে সকল হিসাব করতে পাড়বেন , ইচ্ছা মত হিস্ট্রি
+            যাচাই করতে পারবেন ।
+          </h5>
+        </div>
+        <!-- feature-6 -->
+        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left" data-aos="flip-left">
+          <div
+            class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
+          >
+            <i class="fa-solid fa-globe text-2xl text-white"></i>
+          </div>
+          <h5 class="text-xl mt-5">ওয়েব লিঙ্ক ও ব্যানার</h5>
+          <h5 class="text-lg mt-5">
+            খুব সহজেই নিজের বানানো ব্যানার আপলোড করে তার ভিতরে যে কোন ওয়েবসাইট
+            এর লিঙ্ক ব্যবহার করতে পারবেন ।
+          </h5>
+        </div>
+      </div>
+    </div>
+    <!------ Feature Section end ------>
+    <!-- =====App screen section start====== -->
+    <div class="grid lg:grid-cols-3 gap-6 items-center container mt-40">
+      <div class="col-span-1 lg:col-span-2">
+        <h2 class="text-3xl font-jost text-primary">
+          আমাদের সেরা অ্যাপ স্ক্রীন
+        </h2>
+        <h4 class="mt-2">
+          আমরা জটিল চ্যালেঞ্জের সহজ সমাধান খুঁজে পেতে পছন্দ করি
+        </h4>
+        <ul class="mt-5 list-disc list-inside space-y-2 mb-16">
+          <li class=" ">
+            হোম পেইজেই সকল অপশন দেয়া আছে ,তাই খুবই সহজে যে কেউ ব্যাবহার করতে
+            পারবে ।
+          </li>
+          <li class=" ">লেভেল অনুযায়ী রিচার্জ ও ড্রাইভ সেট করতে পারবেন ।</li>
+          <li class=" ">
+            এক ক্লিকেই সারাদিন বা সারামাসের হিসাব বের করতে পারবেন ।
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="bg-gradient-to-br from-primary to-secondary text-lg text-white px-10 py-4 rounded-full"
+          >Read More</a
+        >
+      </div>
+      <!-- right -->
+      <div class="grid-cols-1 flex justify-center gap-4 items-center">
+        <img src="../dist/images/screenshot-frame.png" alt="" class="" />
+        <!-- circle btn -->
+        <div class="flex flex-col gap-2 z-20">
+          <!-- single btn -->
+          <a
+            href="#"
+            class="h-4 w-4 rounded-full bg-gradient-to-t from-secondary to-primary shadow flex items-center justify-center"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-white"></span>
+          </a>
+          <!-- single btn end -->
+          <!-- single btn -->
+          <a
+            href="#"
+            class="h-4 w-4 rounded-full bg-gradient-to-t from-secondary to-primary shadow flex items-center justify-center"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-white"></span>
+          </a>
+          <!-- single btn end -->
+          <!-- single btn -->
+          <a
+            href="#"
+            class="h-4 w-4 rounded-full bg-gradient-to-t from-secondary to-primary shadow flex items-center justify-center"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-white"></span>
+          </a>
+          <!-- single btn end -->
+          <!-- single btn -->
+          <a
+            href="#"
+            class="h-4 w-4 rounded-full bg-gradient-to-t from-secondary to-primary shadow flex items-center justify-center"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-white"></span>
+          </a>
+          <!-- single btn end -->
+          <!-- single btn -->
+          <a
+            href="#"
+            class="h-4 w-4 rounded-full bg-gradient-to-t from-secondary to-primary shadow flex items-center justify-center"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-white"></span>
+          </a>
+          <!-- single btn end -->
+        </div>
+        <!-- circle btn end -->
+      </div>
+      <!-- right end -->
+    </div>
+    <!-- -----App screen section end------- -->
+    <!-- Packge start -->
+    <div class="mt-40" id="pricing">
+      <h3 class="text-3xl text-primary text-center font-jost container" data-aos="zoom-in-up">
+        আপনার পছন্দ মতো বাছাই করুন
+      </h3>
+      <h5 class="text-primary text-center text-xl my-10">
+        মাসিক চার্জে সার্ভার নিলে অবশই ৩০০০ টাকা সার্ভিস চার্জ দিতে হবে
+      </h5>
+      <div
+        class="flex justify-center border-primary rounded-full w-full mx-auto"
+      >
+        <a href="#" class="border-2 border-primary px-5 py-2 rounded-l-full"
+          >বার্ষিক</a
+        >
+        <a
+          href="#"
+          class="border-2 border-primary bg-primary px-5 py-2 rounded-r-full"
+          >মাসিক</a
+        >
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 container mt-10">
+        <!-- silver -->
+        <div class="col-span-1 bg-slate-100 rounded-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-primary font-jost mt-2">
+              Silver Plan
+            </h3>
+            <p class="font-jost text-lg">Sim server + Drive server + Api</p>
+          </div>
+          <div class="border-b"></div>
+          <div class="p-6">
+            <h3 class="text-primary font-bold">
+              <span class="text-xl">TK</span>
+              <span class="text-3xl">8999</span>/ Yearly
+            </h3>
+            <span class="flex justify-between mb-2 mt-3">
+              <p class="text-lg font-jost font-normal">Admin Panel</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Support ( Max 3 USSD Dialer)
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost">5 User Level</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Banner limite 2</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Users Limite 3000</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Photo Notification Limite 6
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal line-through">
+                E-Dialer Support
+              </p>
+              <i class="fa-solid fa-xmark text-lg text-warning"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">External Dialers 2</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning mb-8">
+                Yearly Renew charge 3600 TK
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <a
+              href="#"
+              class="bg-gradient-to-tl from-secondary to-primary text-white text-lg px-6 py-2 rounded-full"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- golden -->
+        <div class="col-span-1 bg-slate-100 rounded-lg border">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-primary font-jost mt-2">
+              Gold Plan
+            </h3>
+            <p class="font-jost text-lg">Sim server + Drive server + Api</p>
+          </div>
+          <div class="border-b"></div>
+          <div class="p-6">
+            <h3 class="text-primary font-bold">
+              <span class="text-xl">TK</span>
+              <span class="text-3xl">14999</span>/ Yearly
+            </h3>
+            <span class="flex justify-between mb-2 mt-3">
+              <p class="text-lg font-jost font-normal">Admin Panel</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Support ( Max 5 USSD Dialer)
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost">7 User Level</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Banner limite 4</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Users Limite 5000</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Photo Notification Limite 12
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal line-through">
+                E-Dialer Support
+              </p>
+              <i class="fa-solid fa-xmark text-lg text-warning"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">External Dialers 4</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning mb-8">
+                Yearly Renew charge 5040 TK
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <a
+              href="#"
+              class="bg-gradient-to-tl from-secondary to-primary text-white text-lg px-6 py-2 rounded-full"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- Diamond -->
+        <div class="col-span-1 bg-slate-100 rounded-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-primary font-jost mt-2">
+              Diamond Plan
+            </h3>
+            <p class="font-jost text-lg">Sim server + Drive server + Api</p>
+          </div>
+          <div class="border-b"></div>
+          <div class="p-6">
+            <h3 class="text-primary font-bold">
+              <span class="text-xl">TK</span>
+              <span class="text-3xl">18999</span>/ Yearly
+            </h3>
+            <span class="flex justify-between mb-2 mt-3">
+              <p class="text-lg font-jost font-normal">Admin Panel</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Support ( Max 10 USSD Dialer)
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost">15 User Level</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Banner limite 7</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Users Limite 7000</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Photo Notification Limite 20
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">E-Dialer Support</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">External Dialers 6</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning mb-8">
+                Yearly Renew charge 6120 TK
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <a
+              href="#"
+              class="bg-gradient-to-tl from-secondary to-primary text-white text-lg px-6 py-2 rounded-full"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- Ultimate Plan -->
+        <div class="col-span-1 bg-slate-100 rounded-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-primary font-jost mt-2">
+              Ultimate Plan
+            </h3>
+            <p class="font-jost text-lg">Sim server + Drive server + Api</p>
+          </div>
+          <div class="border-b"></div>
+          <div class="p-6">
+            <h3 class="text-primary font-bold">
+              <span class="text-xl">TK</span>
+              <span class="text-3xl">54999</span>/ Yearly
+            </h3>
+            <span class="flex justify-between mb-2 mt-3">
+              <p class="text-lg font-jost font-normal">Admin Panel</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Support ( Unlimited)</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost">User Level ( Unlimited )</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Banner limite ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Users Limite ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Photo Notification Limite ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">
+                E-Dialer Support ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">
+                External Dialers ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning mb-8">
+                Yearly Renew charge 6120 TK
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <a
+              href="#"
+              class="bg-gradient-to-tl from-secondary to-primary text-white text-lg px-6 py-2 rounded-full"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+        <!-- Super++ Agent Plan -->
+        <div class="col-span-1 bg-slate-100 rounded-lg">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-primary font-jost mt-2">
+              Super++ Agent Plan
+            </h3>
+            <p class="font-jost text-lg">Sim server + Drive server + Api</p>
+          </div>
+          <div class="border-b"></div>
+          <div class="p-6">
+            <h3 class="text-primary font-bold">
+              <span class="text-xl">TK</span>
+              <span class="text-3xl">1,99,999</span>/ Life Time
+            </h3>
+            <span class="flex justify-between mb-2 mt-3">
+              <p class="text-lg font-jost font-normal">SuperAdmin Panel</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                Agent creat ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost">Server create ( Unlimited )</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">Support ( Unlimited )</p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                E-Dialer connection ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-jost font-normal">
+                E-dialer Support ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal">
+                E-Dialer Support ( Unlimited )
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning">
+                Yearly Renew charge 10000 TK
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <span class="flex justify-between mb-2">
+              <p class="text-lg font-josi font-normal text-warning mb-8">
+                Conditionally charge applicable
+              </p>
+              <i class="fa-solid fa-check text-lg text-primary"></i>
+            </span>
+            <a
+              href="#"
+              class="bg-gradient-to-tl from-secondary to-primary text-white text-lg px-6 py-2 rounded-full"
+              >Buy Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Packge end -->
+    <!--====== Price start =====-->
+    <div class="text-center w-full mt-32 container">
+      <h2 class="text-3xl font-semibold font-jost" data-aos="zoom-in-up">
+        আপনি পেতে পারেন আমাদের সেরা প্রি-অর্ডার মূল্য
+      </h2>
+      <span class="text-7xl font-thin mb-10 text-primary">--</span>
+      <h5
+        class="list-inside text-gray-400 leading-relaxed space-y-1 md:w-1/2 mx-auto"
+      >
+        আমার সার্ভার ব্যবহার করে দৈনিক ৩০০ থেকে ৫০০/১০০০ টাকা পর্যন্ত ইনকাম করতে
+        পারবেন, ইনশাআল্লাহ!
+      </h5>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 container mt-20">
+      <!-- price-card-1 -->
+      <div class="relative h-[600px] rounded-[40px] shadow-md">
+        <img
+          src="./images/card-top.png"
+          alt=""
+          class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
+        />
+        <div class="absolute top-0 px-10 pt-10 z-50">
+          <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
+          <div
+            class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
+          >
+            <h5 class="text-center text-xl font-bold">Standard Plan App</h5>
+            <img
+              src="./images/pricing-table-01.png"
+              alt=""
+              class="w-24 mx-auto mt-8"
+            />
+            <p class="text-center text-primary font-medium">Retailer</p>
+            <p class="text-center text-primary font-medium mt-2">
+              2.7% recharge commission
+            </p>
+            <p class="text-center text-primary font-medium mt-2">E-commerch</p>
+            <p class="text-center text-gray-400 font-medium line-through mt-2">
+              Bill pay
+            </p>
+            <p class="text-center text-gray-400 font-medium line-through mt-2">
+              Merchant Pay
+            </p>
+            <p class="text-center text-primary font-medium mt-2">
+              Fastest Network
+            </p>
+            <a
+            style="z-index: 100;"
+              href="#"
+              class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
+              >Purchase This Plan Now
+            </a>
+          </div>
+        </div>
+        <img
+          src="./images/card1-bottom.png"
+          alt=""
+          class="bottom-0 right-0 bg-cover rounded-br-[40px] rounded-bl-[40px] absolute"
+        />
+      </div>
+      <!-- price-card-2 -->
+      <div class="relative h-[600px] rounded-[40px] shadow-md">
+        <img
+          src="./images/card1-top.png"
+          alt=""
+          class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
+        />
+        <div class="absolute top-0 px-10 pt-10 z-50">
+          <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
+          <div
+            class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
+          >
+            <h5 class="text-center text-xl font-bold">Standard Plan App</h5>
+            <img
+              src="./images/pricing-table-01.png"
+              alt=""
+              class="w-24 mx-auto mt-8"
+            />
+            <p class="text-center text-primary font-medium">Dealer</p>
+            <p class="text-center text-primary font-medium mt-2">
+              2.8% recharge commission
+            </p>
+            <p class="text-center text-primary font-medium mt-2">E-commerch</p>
+            <p class="text-center text-gray-400 font-medium line-through mt-2">
+              Bill pay
+            </p>
+            <p class="text-center text-primary font-medium mt-2">
+              Merchant Pay
+            </p>
+            <p class="text-center text-primary font-medium mt-2">
+              Fastest Network
+            </p>
+            <a
+            style="z-index: 100;"
+              href="#"
+              class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
+              >Purchase This Plan Now
+            </a>
+          </div>
+        </div>
+        <img
+          src="./images/card1-bottom.png"
+          alt=""
+          class="bottom-0 right-0 bg-cover rounded-br-[40px] rounded-bl-[40px] absolute"
+        />
+      </div>
+      <!-- price-card-3  -->
+      <div class="relative h-[600px] rounded-[40px] shadow-md">
+        <img
+          src="./images/card1-top.png"
+          alt=""
+          class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
+        />
+        <div class="absolute top-0 px-10 pt-10 z-50">
+          <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
+          <div
+            class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
+          >
+            <h5 class="text-center text-xl font-bold">Standard Plan App</h5>
+            <img
+              src="./images/pricing-table-01.png"
+              alt=""
+              class="w-24 mx-auto mt-8"
+            />
+            <p class="text-center text-primary font-medium">House</p>
+            <p class="text-center text-primary font-medium mt-2">
+              2.9% recharge commission
+            </p>
+            <p class="text-center text-primary font-medium mt-2">E-commerch</p>
+            <p class="text-center text-primary font-medium mt-2">Bill pay</p>
+            <p class="text-center text-primary font-medium mt-2">
+              Merchant Pay
+            </p>
+            <p class="text-center text-primary font-medium mt-2">
+              Fastest Network
+            </p>
+            <a
+            style="z-index: 100;"
+              href="#"
+              class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
+              >Purchase This Plan Now
+            </a>
+          </div>
+        </div> 
+        <img
+          src="./images/card1-bottom.png"
+          alt=""
+          class="bottom-0 right-0 bg-cover rounded-br-[40px] rounded-bl-[40px] absolute"
+        />
+      </div>
+    </div>
+    <!-- Price end -->
+    <!-- footer -->
+    <footer class="relative">
+      <div
+        class="bg-gradient-to-tl from-secondary to-primary h-[1800px] md:h-[1600px] lg:h-[900px] mt-24"
+      >
+        <img src="/images/bg-img/bg-top.png" alt="" />
+        <img
+          src="/images/bg-triangle.png"
+          alt=""
+          class="absolute right-0 mt-10"
+        />
+        <img src="/images/bg-circle.png" alt="" class="absolute bottom-0" />
+        <div class="absolute top-60 text-center container">
+          <div class="text-3xl font-jost font-semibold w-3/4 lg:w-1/2 mx-auto">
+            Join Our Telegram Group To Receive The News & Latest Trends
+          </div>
+          <div
+            class="grid lg:grid-cols-12 justify-center container gap-6 mt-16"
+          >
+            <!-- head office -->
+            <div class="col-span-3">
+              <h2 class="text-3xl text-white font-semibold text-center">
+                Head Office
+              </h2>
+              <div class="flex flex-col items-center gap-2 mt-8">
+                <i class="fa-solid text-white fa-location-dot"></i>
+                <h4 class="text-white text-lg">Keraniganj,Dhaka,Bangladesh</h4>
+                <div class="flex items-center gap-1">
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center text-white hover:text-blue-400 border-opacity-40 hover:bg-white transition duration-500"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center text-white hover:text-blue-400 border-opacity-40 hover:bg-white transition duration-500"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full border border-gray-400 border-opacity-40 flex items-center justify-center text-white hover:text-blue-400 hover:bg-white transition duration-500"
+                  >
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 rounded-full border border-gray-400 border-opacity-40 flex items-center justify-center text-white hover:text-blue-400 hover:bg-white transition duration-500"
+                  >
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- head office end -->
+            <!-- About Us -->
+            <div class="col-span-3 px-">
+              <h2 class="text-3xl text-white font-semibold text-center mb-6">
+                About Us
+              </h2>
+              <div
+                class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="text-lg">Home</a>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="text-lg">Services</a>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="text-lg">About</a>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="text-lg">Testimonials</a>
+              </div>
+              <div
+                class="flex items-center gap-2 text-white hover:tracking-wider transition-all duration-200"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="text-lg">Pricing</a>
+              </div>
+            </div>
+            <!-- About Us end -->
+            <!-- Useful Links -->
+            <div class="col-span-3 px-">
+              <h2 class="text-3xl text-white font-semibold text-center mb-6">
+                Useful Links
+              </h2>
+              <div class="text-base text-white text-center space-y-2">
+                <h5 class="">Free Apps</h5>
+                <h5 class="">App Engine</h5>
+                <h5 class="">Programming</h5>
+                <h5 class="">Programming</h5>
+                <h5 class="">App News</h5>
+                <h5 class="">App Dev Team</h5>
+                <h5 class="">Digital Web</h5>
+                <h5 class="">Normal Apps</h5>
+              </div>
+            </div>
+            <!-- Useful Links end -->
+            <!-- About our Company -->
+            <div class="col-span-3">
+              <h2 class="text-3xl text-white font-semibold text-center mb-6">
+                About Our Company
+              </h2>
+              <div
+                class="w-28 h-28 rounded-full bg-white flex items-center justify-center mx-auto"  data-aos="flip-left"
+              >
+                <h3 class="text-primary font-bold font-serif">
+                  TRUSTED RECHARGE
+                </h3>
+              </div>
+              <p class="text-white mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut .
+              </p>
+            </div>
+            <!-- About our Company end -->
+          </div>
+        </div>
+      </div>
+      <!-- copy right -->
+      <div class="flex justify-center">
+        <div
+          class="absolute bottom-0 border-t border-gray-400 border-opacity-40 lg:flex lg:justify-between py-6 px-6 w-11/12"
+        >
+          <div class="">
+            <h5 class="text-white">
+              © <a href="#" class="border-b">AMRServer</a>, All Right Reserved.
+              Designed By <a href="#" class="border-b">AMRServer</a>
+            </h5>
+          </div>
+          <div class="flex justify-center gap-2">
+            <a
+              href="#"
+              class="text-white px-4 border-r border-gray-400 border-opacity-50"
+              >Home</a
+            >
+            <a href="#" class="text-white px-4">Help</a>
+          </div>
+        </div>
+      </div>
+      <!-- copy right end -->
+    </footer>
+    <!-- footer end -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+      AOS.init({
+        duration:1000,
+        offset:100,
+      });
+    </script>
+    <script>
+      let isMenuOpen = false
+      function onToggleMenu() {
+        let menu = document.querySelector(".toggle-menu")
+        let menuIcon = document.querySelector(".menu-icon")
+
+        isMenuOpen = !isMenuOpen
+
+        if(isMenuOpen){
+          //Toggle Menu Items
+          menu.classList.remove('hidden')
+          menu.classList.add('block')
+
+          //Toggle Menu Icon
+          menuIcon.classList.remove('fa-bars')
+          menuIcon.classList.add('fa-times')
+        }else{
+          //Toggle Menu Items
+          menu.classList.remove('block')
+          menu.classList.add('hidden')
+
+          //Toggle Menu Icon
+          menuIcon.classList.remove('fa-times')
+          menuIcon.classList.add('fa-bars')
+        }
+
+
+
+      }
+    </script>
+    <!--===== firebase =====-->
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAH4y3Sx4xQkGX1sAxZHypgnmYtf20hkqw",
+    authDomain: "trusted-recharge-198ec.firebaseapp.com",
+    projectId: "trusted-recharge-198ec",
+    storageBucket: "trusted-recharge-198ec.appspot.com",
+    messagingSenderId: "971368189162",
+    appId: "1:971368189162:web:8e1cf353b2a4817b6a1b93"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+  </body>
+</html>
