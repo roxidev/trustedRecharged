@@ -1409,12 +1409,26 @@ html{
   position: sticky;
 }
 
+.inset-x-0{
+  left: 0px;
+  right: 0px;
+}
+
+.inset-y-0{
+  top: 0px;
+  bottom: 0px;
+}
+
 .bottom-0{
   bottom: 0px;
 }
 
 .left-0{
   left: 0px;
+}
+
+.left-16{
+  left: 4rem;
 }
 
 .left-5{
@@ -1457,28 +1471,36 @@ html{
   top: 400px;
 }
 
-.-left-5{
-  left: -1.25rem;
-}
-
-.-left-2{
-  left: -0.5rem;
-}
-
 .left-2{
   left: 0.5rem;
 }
 
-.left-10{
-  left: 2.5rem;
+.left-3{
+  left: 0.75rem;
 }
 
-.left-1{
-  left: 0.25rem;
+.top-\[\]{
+  top: ;
 }
 
-.left-16{
-  left: 4rem;
+.top-\[10px\]{
+  top: 10px;
+}
+
+.top-3{
+  top: 0.75rem;
+}
+
+.top-4{
+  top: 1rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
+.-z-10{
+  z-index: -10;
 }
 
 .z-20{
@@ -1491,10 +1513,6 @@ html{
 
 .z-50{
   z-index: 50;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .col-span-1{
@@ -1639,6 +1657,38 @@ html{
   height: auto;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[410px\]{
+  height: 410px;
+}
+
+.h-\[510px\]{
+  height: 510px;
+}
+
+.h-\[0px\]{
+  height: 0px;
+}
+
+.h-\[490px\]{
+  height: 490px;
+}
+
+.h-\[479\]{
+  height: 479;
+}
+
+.h-\[480px\]{
+  height: 480px;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1675,6 +1725,10 @@ html{
   width: 13rem;
 }
 
+.w-\[210px\]{
+  width: 210px;
+}
+
 .w-\[5px\]{
   width: 5px;
 }
@@ -1683,32 +1737,29 @@ html{
   width: 100%;
 }
 
-.w-2\/4{
-  width: 50%;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
-.w-56{
-  width: 14rem;
-}
-
-.w-48{
-  width: 12rem;
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .w-\[\]{
   width: ;
 }
 
-.w-\[200px\]{
-  width: 200px;
+.w-\[220px\]{
+  width: 220px;
 }
 
-.w-\[210px\]{
-  width: 210px;
+.w-\[21px\]{
+  width: 21px;
+}
+
+.w-\[215px\]{
+  width: 215px;
+}
+
+.w-\[22px\]{
+  width: 22px;
 }
 
 .-translate-y-1\/2{
@@ -1867,6 +1918,14 @@ html{
   border-top-width: 1px;
 }
 
+.border-b-8{
+  border-bottom-width: 8px;
+}
+
+.border-b-\[300px\]{
+  border-bottom-width: 300px;
+}
+
 .border-gray-400{
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -1880,6 +1939,10 @@ html{
 .border-red-500{
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-b-\[\]{
+  border-bottom-color: ;
 }
 
 .border-opacity-40{
