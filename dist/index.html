@@ -16,10 +16,13 @@
     <!-- ASO Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Trusted Recharce</title>
+    <!-- Slick slider -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
   </head>
   <body>
     <!--====== nav start ========-->
-    <nav class="bg-gray-100 mb-5 lg:mb-0">
+    <nav class="bg-gray-100 mb-5 lg:mb-0 sticky top-0 z-50 relative">
       <div
         class="flex flex-col lg:flex-row lg:justify-between lg:items-center container"
       >
@@ -40,9 +43,9 @@
           </span>
         </div>
         <!-- menu list start -->
-        <div class="hidden lg:block toggle-menu" >
+        <div class="hidden lg:block toggle-menu">
           <ul
-            class="flex flex-col gap-1 text-center lg:flex-row lg:items-center lg:gap-[4vw] font-medium text-secondar tracking-wide text-base xl:text-lg w-full left-0 lg:w-auto lg:opacity-100 opacity- top[-400px] transition-all ease-in duration-500"
+            class="flex flex-col gap-1 text-center lg:flex-row lg:items-center lg:gap-[4vw] font-medium text-secondar tracking-wide text-base xl:text-lg w-full left-0 lg:w-auto lg:opacity-100 opacity- top-[400px] transition-all ease-in duration-500"
           >
             <li
               class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
@@ -54,11 +57,11 @@
               >
             </li>
             <li
-              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100"
+              class="hover:text-primary border-b lg:border-none py-1 rounded hover:bg-gray-200 lg:hover:bg-gray-100 duration-500"
             >
               <a
                 class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
-                href="#"
+                href="#service"
                 >Service</a
               >
             </li>
@@ -76,7 +79,7 @@
             >
               <a
                 class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
-                href="#"
+                href="#property"
                 >Property</a
               >
             </li>
@@ -85,16 +88,21 @@
             >
               <a
                 class="focus:text-primary lg:border-b lg:border-b-gray-100 lg:focus:border-b-primary duration-75"
-                href="#"
+                href="#about"
                 >About</a
               >
             </li>
             <button>
-              <a
-                href="#"
-                class="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary flex items-center justify-center gap-2 px-5 py-2 rounded-full font-medium text-white text-base xl:text-lg duration-500"
-                ><i class="fa-solid fa-arrow-right-to-bracket"></i> Download</a
-              >
+              <div class="group border-2 border-red-500 relative">
+                <a
+                  href="#"
+                  class="bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary flex items-center justify-center gap-2 px-5 py-2 rounded-full font-medium text-white text-base xl:text-lg duration-500"
+                  ><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a
+                >
+                <div
+                  class="w-40 h-24 border-2 border-red-500 group-hover:block absolute hidden"
+                ></div>
+              </div>
             </button>
           </ul>
         </div>
@@ -151,11 +159,15 @@
     </div>
     <!-- Slider end -->
     <!--======= service section start ======-->
-  
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 container mt-10">
-        <!-- card-1 -->
+
+    <div
+      class="grid grid-cols-1 lg:grid-cols-4 gap-6 container mt-10"
+      id="service"
+    >
+      <!-- card-1 -->
       <div
-        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary"
+        data-aos="flip-up"
       >
         <div class="relative p-10 top-0 w-full">
           <i
@@ -185,7 +197,8 @@
       </div>
       <!-- card-2 -->
       <div
-        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary " data-aos="flip-up"
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary"
+        data-aos="flip-up"
       >
         <div class="relative p-10 top-0 w-full">
           <img
@@ -217,7 +230,8 @@
       </div>
       <!-- card-3 -->
       <div
-        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary"
+        data-aos="flip-up"
       >
         <div class="relative p-10 top-0 w-full">
           <img
@@ -248,7 +262,8 @@
       </div>
       <!-- card-4 -->
       <div
-        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary" data-aos="flip-up"
+        class="group w-full h-auto rounded-xl rounded-tr-[50px] shadow-md bg-gradient-to-r from-slate-50 to-slate-100 hover:from-primary hover:to-secondary"
+        data-aos="flip-up"
       >
         <div class="relative p-10 top-0 w-full">
           <img
@@ -280,9 +295,12 @@
     </div>
     <!-- service section end -->
     <!--===== Server-Service Start =====-->
-    <div class="flex flex-col lg:flex-row gap-20 container mt-20" data-aos="fade-up">
-      <div class="text-center w-full" >
-        <h2 class="text-3xl font-semibold font-jost  " >আমার সার্ভার কি ?</h2>
+    <div
+      class="flex flex-col lg:flex-row gap-20 container mt-20"
+      data-aos="fade-up"
+    >
+      <div class="text-center w-full">
+        <h2 class="text-3xl font-semibold font-jost">আমার সার্ভার কি ?</h2>
         <span class="text-7xl font-thin mb-10 text-primary">--</span>
         <h6 class="text-gray-400 mb-2">
           আমার সার্ভার এর মাধ্যমে সকল সিমে রিচার্জ করতে পারবেন এবং সকল সিমে
@@ -332,7 +350,9 @@
     <!-- Server-Service end -->
     <!--===== support section start =====-->
     <div
-      class="container text-center text-3xl font-semibold hover:tracking-widest duration-300 mt-10 py-10 group" data-aos="flip-up"
+      class="container text-center text-3xl font-semibold hover:tracking-widest duration-300 mt-10 py-10 group"
+      data-aos="flip-up"
+      id="property"
     >
       <span class="text-secondary group-hover:text-primary">আমাদের</span>
       <span class="text-primary group-hover:text-secondary">বৈশিষ্ট্য</span>
@@ -468,7 +488,11 @@
           </h5>
         </div>
         <!-- feature-6 -->
-        <div class="bg-slate-100 p-8 rounded-xl" data-aos="flip-left" data-aos="flip-left">
+        <div
+          class="bg-slate-100 p-8 rounded-xl"
+          data-aos="flip-left"
+          data-aos="flip-left"
+        >
           <div
             class="w-16 h-16 rounded-full bg-gradient-to-tl from-primary to-secondary flex items-center justify-center"
           >
@@ -484,7 +508,10 @@
     </div>
     <!------ Feature Section end ------>
     <!-- =====App screen section start====== -->
-    <div class="grid lg:grid-cols-3 gap-6 items-center container mt-40">
+    <div
+      class="grid lg:grid-cols-3 gap-6 items-center container mt-40"
+      id="about"
+    >
       <div class="col-span-1 lg:col-span-2">
         <h2 class="text-3xl font-jost text-primary">
           আমাদের সেরা অ্যাপ স্ক্রীন
@@ -509,8 +536,29 @@
         >
       </div>
       <!-- right -->
-      <div class="grid-cols-1 flex justify-center gap-4 items-center">
+      <div
+        class="grid-cols-1 flex justify-center gap-4 items-center border-2 border-red-500 relative"
+      >
         <img src="../dist/images/screenshot-frame.png" alt="" class="" />
+
+        <!-- Frame 1 -->
+        <div class="border-2 border-red-500 absolute left-16 -z-10 your-class">
+          <img
+            src="../dist/images/scricShort/screenshot-1.png"
+            alt=""
+            class="w-[210px]"
+          />
+          <img
+            src="../dist/images/scricShort/screenshot-2.png"
+            alt=""
+            class="w-[210px]"
+          />
+          <img
+            src="../dist/images/scricShort/screenshot-3.png"
+            alt=""
+            class="w-[210px]"
+          />
+        </div>
         <!-- circle btn -->
         <div class="flex flex-col gap-2 z-20">
           <!-- single btn -->
@@ -561,7 +609,10 @@
     <!-- -----App screen section end------- -->
     <!-- Packge start -->
     <div class="mt-40" id="pricing">
-      <h3 class="text-3xl text-primary text-center font-jost container" data-aos="zoom-in-up">
+      <h3
+        class="text-3xl text-primary text-center font-jost container"
+        data-aos="zoom-in-up"
+      >
         আপনার পছন্দ মতো বাছাই করুন
       </h3>
       <h5 class="text-primary text-center text-xl my-10">
@@ -927,7 +978,7 @@
         পারবেন, ইনশাআল্লাহ!
       </h5>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 container mt-20">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 container mt-20">
       <!-- price-card-1 -->
       <div class="relative h-[600px] rounded-[40px] shadow-md">
         <img
@@ -935,7 +986,7 @@
           alt=""
           class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
         />
-        <div class="absolute top-0 px-10 pt-10 z-50">
+        <div class="absolute top-0 px-10 pt-10 z-40">
           <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
           <div
             class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
@@ -961,7 +1012,7 @@
               Fastest Network
             </p>
             <a
-            style="z-index: 100;"
+              style="z-index: 100"
               href="#"
               class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
               >Purchase This Plan Now
@@ -981,7 +1032,7 @@
           alt=""
           class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
         />
-        <div class="absolute top-0 px-10 pt-10 z-50">
+        <div class="absolute top-0 px-10 pt-10 z-40">
           <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
           <div
             class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
@@ -1007,7 +1058,7 @@
               Fastest Network
             </p>
             <a
-            style="z-index: 100;"
+              style="z-index: 100"
               href="#"
               class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
               >Purchase This Plan Now
@@ -1027,7 +1078,7 @@
           alt=""
           class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
         />
-        <div class="absolute top-0 px-10 pt-10 z-50">
+        <div class="absolute top-0 px-10 pt-10 z-40">
           <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
           <div
             class="absolute top-24 left-0 md:left-40 lg:left-0 xl:left-10 w-full flex flex-col justify-center"
@@ -1051,13 +1102,57 @@
               Fastest Network
             </p>
             <a
-            style="z-index: 100;"
+              style="z-index: 100"
               href="#"
               class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
               >Purchase This Plan Now
             </a>
           </div>
-        </div> 
+        </div>
+        <img
+          src="./images/card1-bottom.png"
+          alt=""
+          class="bottom-0 right-0 bg-cover rounded-br-[40px] rounded-bl-[40px] absolute"
+        />
+      </div>
+      <!-- price-card-4 -->
+      <div class="relative h-[600px] rounded-[40px] shadow-md">
+        <img
+          src="./images/card-top.png"
+          alt=""
+          class="top-0 bg-cover rounded-ss-[40px] rounded-e-[40px] md:rounded-e-[0px] lg:rounded-e-[40px] xl:rounded-e-[0px]"
+        />
+        <div class="absolute top-0 px-10 pt-10 z-40">
+          <h2 class="text-4xl md:text-5xl font-semibold font-jost">BDT/150</h2>
+          <div class="w-full flex flex-col justify-center">
+            <h5 class="text-center text-xl font-bold">Standard Plan App</h5>
+            <img
+              src="./images/pricing-table-01.png"
+              alt=""
+              class="w-24 mx-auto mt-8"
+            />
+            <p class="text-center text-primary font-medium">Retailer</p>
+            <p class="text-center text-primary font-medium mt-2">
+              2.7% recharge commission
+            </p>
+            <p class="text-center text-primary font-medium mt-2">E-commerch</p>
+            <p class="text-center text-gray-400 font-medium line-through mt-2">
+              Bill pay
+            </p>
+            <p class="text-center text-gray-400 font-medium line-through mt-2">
+              Merchant Pay
+            </p>
+            <p class="text-center text-primary font-medium mt-2">
+              Fastest Network
+            </p>
+            <a
+              style="z-index: 100"
+              href="#"
+              class="text-center text-primary font-medium hover:bg-primary hover:text-white border border-primary rounded-full py-2 w-52 mx-auto mt-10 duration-300 z-50"
+              >Purchase This Plan Now
+            </a>
+          </div>
+        </div>
         <img
           src="./images/card1-bottom.png"
           alt=""
@@ -1066,18 +1161,18 @@
       </div>
     </div>
     <!-- Price end -->
-    <!-- footer -->
+    <!-- footer start -->
     <footer class="relative">
       <div
         class="bg-gradient-to-tl from-secondary to-primary h-[1800px] md:h-[1600px] lg:h-[900px] mt-24"
       >
-        <img src="/images/bg-img/bg-top.png" alt="" />
+        <img src="./images/bg-img/bg-top.png" alt="" />
         <img
-          src="/images/bg-triangle.png"
+          src="./images/bg-triangle.png"
           alt=""
           class="absolute right-0 mt-10"
         />
-        <img src="/images/bg-circle.png" alt="" class="absolute bottom-0" />
+        <img src="./images/bg-circle.png" alt="" class="absolute bottom-0" />
         <div class="absolute top-60 text-center container">
           <div class="text-3xl font-jost font-semibold w-3/4 lg:w-1/2 mx-auto">
             Join Our Telegram Group To Receive The News & Latest Trends
@@ -1137,13 +1232,13 @@
                 class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
               >
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="#" class="text-lg">Services</a>
+                <a href="#service" class="text-lg">Services</a>
               </div>
               <div
                 class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
               >
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="#" class="text-lg">About</a>
+                <a href="#about" class="text-lg">About</a>
               </div>
               <div
                 class="flex items-center gap-2 text-white mb-2 hover:tracking-wider transition-all duration-200"
@@ -1155,7 +1250,7 @@
                 class="flex items-center gap-2 text-white hover:tracking-wider transition-all duration-200"
               >
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="#" class="text-lg">Pricing</a>
+                <a href="#pricing" class="text-lg">Pricing</a>
               </div>
             </div>
             <!-- About Us end -->
@@ -1165,14 +1260,36 @@
                 Useful Links
               </h2>
               <div class="text-base text-white text-center space-y-2">
-                <h5 class="">Free Apps</h5>
-                <h5 class="">App Engine</h5>
-                <h5 class="">Programming</h5>
-                <h5 class="">Programming</h5>
-                <h5 class="">App News</h5>
-                <h5 class="">App Dev Team</h5>
-                <h5 class="">Digital Web</h5>
-                <h5 class="">Normal Apps</h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Free Apps
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Free Apps
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Free Apps
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  App Engine
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Programming
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Programming
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  App News
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  App Dev Team
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Digital Web
+                </h5>
+                <h5 class="hover:text-gray-500 duration-200 cursor-pointer">
+                  Normal Apps
+                </h5>
               </div>
             </div>
             <!-- Useful Links end -->
@@ -1182,7 +1299,8 @@
                 About Our Company
               </h2>
               <div
-                class="w-28 h-28 rounded-full bg-white flex items-center justify-center mx-auto"  data-aos="flip-left"
+                class="w-28 h-28 rounded-full bg-white flex items-center justify-center mx-auto"
+                data-aos="flip-left"
               >
                 <h3 class="text-primary font-bold font-serif">
                   TRUSTED RECHARGE
@@ -1221,62 +1339,86 @@
       <!-- copy right end -->
     </footer>
     <!-- footer end -->
+    <!-- slick slider  -->
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".your-class").slick({
+          // setting-name: setting-value
+        });
+      });
+    </script> -->
+    <!-- slick end -->
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> 
+    <script>
       AOS.init({
-        duration:1000,
-        offset:100,
+        duration: 1000,
+        offset: 100,
       });
     </script>
+    <!-- nav toggle -->
     <script>
-      let isMenuOpen = false
+      let isMenuOpen = false;
       function onToggleMenu() {
-        let menu = document.querySelector(".toggle-menu")
-        let menuIcon = document.querySelector(".menu-icon")
+        let menu = document.querySelector(".toggle-menu");
+        let menuIcon = document.querySelector(".menu-icon");
 
-        isMenuOpen = !isMenuOpen
+        isMenuOpen = !isMenuOpen;
 
-        if(isMenuOpen){
+        if (isMenuOpen) {
           //Toggle Menu Items
-          menu.classList.remove('hidden')
-          menu.classList.add('block')
+          menu.classList.remove("hidden");
+          menu.classList.add("block");
 
           //Toggle Menu Icon
-          menuIcon.classList.remove('fa-bars')
-          menuIcon.classList.add('fa-times')
-        }else{
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
+        } else {
           //Toggle Menu Items
-          menu.classList.remove('block')
-          menu.classList.add('hidden')
+          menu.classList.remove("block");
+          menu.classList.add("hidden");
 
           //Toggle Menu Icon
-          menuIcon.classList.remove('fa-times')
-          menuIcon.classList.add('fa-bars')
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
         }
-
-
-
       }
+    </script>
+    <!-- nav slicky -->
+    <script type="">
+      window.addEventListener("scroll", function () {
+        var nav = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
     </script>
     <!--===== firebase =====-->
     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAH4y3Sx4xQkGX1sAxZHypgnmYtf20hkqw",
-    authDomain: "trusted-recharge-198ec.firebaseapp.com",
-    projectId: "trusted-recharge-198ec",
-    storageBucket: "trusted-recharge-198ec.appspot.com",
-    messagingSenderId: "971368189162",
-    appId: "1:971368189162:web:8e1cf353b2a4817b6a1b93"
-  };
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAH4y3Sx4xQkGX1sAxZHypgnmYtf20hkqw",
+        authDomain: "trusted-recharge-198ec.firebaseapp.com",
+        projectId: "trusted-recharge-198ec",
+        storageBucket: "trusted-recharge-198ec.appspot.com",
+        messagingSenderId: "971368189162",
+        appId: "1:971368189162:web:8e1cf353b2a4817b6a1b93",
+      };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
